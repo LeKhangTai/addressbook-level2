@@ -22,7 +22,7 @@ public class Name {
      * @throws IllegalValueException if given name string is invalid.
      */
     public Name(String name) throws IllegalValueException {
-        String trimmedName = name.trim();
+        String trimmedName = name.trim().toUpperCase();
         if (!isValidName(trimmedName)) {
             throw new IllegalValueException(MESSAGE_NAME_CONSTRAINTS);
         }
@@ -42,6 +42,7 @@ public class Name {
     public List<String> getWordsInName() {
         return Arrays.asList(fullName.split("\\s+"));
     }
+
 
     @Override
     public String toString() {
