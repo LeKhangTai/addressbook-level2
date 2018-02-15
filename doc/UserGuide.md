@@ -82,6 +82,10 @@ Examples:
   `delete 1`<br>
   Deletes the 1st person in the results of the `find` command.
 
+### Sort all names: 'sort'
+sorts all the names in address book according to lexicographic order. <br>
+Format: 'sort'
+
 ### View non-private details of a person : `view`
 Displays the non-private details of the specified person.<br>
 Format: `view INDEX`
